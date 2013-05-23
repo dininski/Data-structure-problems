@@ -9,6 +9,7 @@ namespace LinkedListUnitTests
     {
         #region LinkedList indexer tests
         [TestMethod]
+        [TestCategory("LinkedList indexers")]
         public void TestLinkedListGetIndexer_1()
         {
             LinkedList<int> list = new LinkedList<int>();
@@ -27,6 +28,7 @@ namespace LinkedListUnitTests
         }
 
         [TestMethod]
+        [TestCategory("LinkedList indexers")]
         [ExpectedException(typeof(IndexOutOfRangeException), "Incorrectly comparing the size of the list with the list - index should be out of range!")]
         public void TestLinkedListGetIndexerInvalidIndex()
         {
@@ -36,6 +38,7 @@ namespace LinkedListUnitTests
         }
 
         [TestMethod]
+        [TestCategory("LinkedList indexers")]
         public void TestLinkedListSetIndexer_1()
         {
             LinkedList<int> list = new LinkedList<int>();
@@ -59,6 +62,7 @@ namespace LinkedListUnitTests
         }
 
         [TestMethod]
+        [TestCategory("LinkedList indexers")]
         [ExpectedException(typeof(IndexOutOfRangeException))]
         public void TestLinkedListSetIndexerInvalidIndex()
         {
@@ -71,6 +75,7 @@ namespace LinkedListUnitTests
 
         #region LinkedList.IndexOf tests
         [TestMethod]
+        [TestCategory("LinkedList.IndexOf()")]
         public void TestIndexOfValidElement()
         {
             int number = 10;
@@ -83,6 +88,7 @@ namespace LinkedListUnitTests
         }
 
         [TestMethod]
+        [TestCategory("LinkedList.IndexOf()")]
         public void TestIndexOfInvalidElement()
         {
             int number = 12;
@@ -94,12 +100,13 @@ namespace LinkedListUnitTests
         }
 
         [TestMethod]
+        [TestCategory("LinkedList.IndexOf()")]
         [ExpectedException(typeof(ArgumentNullException))]
         public void TestIndexOfNullElement()
         {
             LinkedList<string> list = new LinkedList<string>();
             list.AddElement("sample string");
-            Assert.AreEqual(-1, list.IndexOf(null));
+            list.IndexOf(null);
         }
 
         #endregion

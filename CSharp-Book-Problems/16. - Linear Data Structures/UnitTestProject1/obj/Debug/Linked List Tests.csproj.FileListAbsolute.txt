@@ -1,7 +1,7 @@
 D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\bin\Debug\UnitTestProject1.dll
 D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
-D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\bin\Debug\Linked List Implementation.exe
 D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\bin\Debug\Linked List Implementation.pdb
 D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\obj\Debug\Linked List Tests.csprojResolveAssemblyReference.cache
 D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\UnitTestProject1\bin\Debug\Linked List Implementation.dll
