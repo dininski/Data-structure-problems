@@ -1,10 +1,12 @@
 ﻿namespace Linked_List_Implementation
 {
-    public class LinkedList<T>
+    using System;
+
+    public class LinkedList<T> where T : IComparable
     {
         private Node head;
         private Node tail;
-        public int Count { get; set; }
+        public int Count { get; private set; }
 
         public LinkedList()
         {
@@ -81,7 +83,7 @@
 
             while (currentNode != null)
             {
-                if ((currentNode.Element.Equals(obj) && currentNode.Element != null)
+                if ((currentNode.Element.CompareTo(obj) == 0 && currentNode.Element != null)
                     || currentNode.Element == null && obj == null)
                 {
                     break;
@@ -100,7 +102,88 @@
             {
                 return -1;
             }
+        }
 
+        public T this[int index]
+        {
+            get
+            {
+                if (index > this.Count - 1 || index < 0)
+                {
+                    throw new IndexOutOfRangeException("The supplied index must be larger that 0 and less than the size of the list!");
+                }
+
+                Node currentNode = this.head;
+                int counter = 0;
+
+                while (counter != index)
+                {
+                    currentNode = currentNode.Next;
+                    counter++;
+                }
+
+                return currentNode.Element;
+            }
+
+            set
+            {
+                if (index > this.Count - 1 || index < 0)
+                {
+                    throw new IndexOutOfRangeException("The supplied index must be larger that 0 and less than the size of the list!");
+                }
+
+                Node currentNode = this.head;
+                int counter = 0;
+
+                while (counter != index)
+                {
+                    currentNode = currentNode.Next;
+                    counter++;
+                }
+
+                currentNode.Element = value;
+            }
+        }
+
+        public int IndexOf(T obj)
+        {
+            if (obj == null)
+            {
+                throw new ArgumentNullException("The element that you are searching for cannot be null!");
+            }
+
+            Node currentItem = this.head;
+            int currentIndex = 0;
+
+            if (!this.Contains(obj))
+            {
+                return -1;
+            }
+
+            while (currentItem.Element.CompareTo(obj) != 0 && currentItem != null)
+            {
+                currentItem = currentItem.Next;
+                currentIndex++;
+            }
+
+            return currentIndex;
+        }
+
+        public bool Contains(T obj)
+        {
+            Node currentItem = this.head;
+
+            while (currentItem != null)
+            {
+                if (currentItem.Element.CompareTo(obj) == 0)
+                {
+                    return true;
+                }
+
+                currentItem = currentItem.Next;
+            }
+
+            return false;
         }
 
         private class Node
