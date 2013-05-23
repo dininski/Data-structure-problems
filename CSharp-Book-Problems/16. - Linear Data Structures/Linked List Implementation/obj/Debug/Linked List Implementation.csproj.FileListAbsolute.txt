@@ -1,0 +1,6 @@
+D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\Linked List Implementation\bin\Debug\Linked List Implementation.exe.config
+D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\Linked List Implementation\obj\Debug\Linked List Implementation.csprojResolveAssemblyReference.cache
+D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\Linked List Implementation\bin\Debug\Linked List Implementation.exe
+D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\Linked List Implementation\bin\Debug\Linked List Implementation.pdb
+D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\Linked List Implementation\obj\Debug\Linked List Implementation.exe
+D:\vase\git\Data-structure-problems\CSharp-Book-Problems\16. - Linear Data Structures\Linked List Implementation\obj\Debug\Linked List Implementation.pdb
