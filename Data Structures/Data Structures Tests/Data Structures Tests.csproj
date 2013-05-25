@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Linked List Implementation\Linked List Implementation.csproj">
+    <ProjectReference Include="..\Data Structures\Data Structures.csproj">
       <Project>{8cc62fc5-7a16-439b-8cbd-f1b82d6dc2e2}</Project>
-      <Name>Linked List Implementation</Name>
+      <Name>Data Structures</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
